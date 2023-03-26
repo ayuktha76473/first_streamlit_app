@@ -34,16 +34,16 @@ try:
      streamlit.error("Please select a fruit to get information.")	
         #streamlit.write('The user entered ', fruit_choice)
    else: 
-     back_from_function= get_fruityvice_data(fruit_choice)
-     streamlit.dataframe(back_from_function)
+      back_from_function= get_fruityvice_data(fruit_choice)
+      streamlit.dataframe(back_from_function)
        #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
        #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
        #streamlit.dataframe(fruityvice_normalized)
-except URLError as e:
-    streamlit.error()	
+#except URLError as e:
+    #streamlit.error()	
 	
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+#import requests
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
 
 
@@ -52,7 +52,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 # write your own comment - what does this do?
 
 
-#streamlit.stop()
+streamlit.stop()
 
 import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
