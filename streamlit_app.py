@@ -52,7 +52,7 @@ try:
 # write your own comment - what does this do?
 
 
-$streamlit.stop()
+#streamlit.stop()
 
 #import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
