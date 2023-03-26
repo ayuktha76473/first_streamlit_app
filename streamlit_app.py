@@ -42,7 +42,8 @@ try:
 except URLError as e:
     streamlit.error()	
 	
-#import requests
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 
 
 
