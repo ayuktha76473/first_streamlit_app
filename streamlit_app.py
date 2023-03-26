@@ -1,9 +1,5 @@
  import streamlit
-	
-
 	streamlit.title('My Parents New Healthy Diner')
-	
-
 	streamlit.header('Breakfast Menu')
 	streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 	streamlit.text('🥗 Kale,Spinach & Rocket Smoothie')
@@ -23,10 +19,6 @@ import pandas
 
 
 
-
-
-
-
 	#import snowflake.connector
 	my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 	my_cur = my_cnx.cursor()
@@ -39,7 +31,6 @@ import pandas
 	
 
 	my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
-Give feedback
 
 
 
